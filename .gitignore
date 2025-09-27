@@ -112,6 +112,9 @@ temp/
 # macOS
 .DS_Store
 
+# Windows Zone.Identifier files
+*:Zone.Identifier
+
 # Deployment packages
 *.tar.gz
 802sk-deploy-*.tar.gz
