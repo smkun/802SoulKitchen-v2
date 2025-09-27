@@ -41,9 +41,9 @@ export default function FirebaseMenu() {
         const menuCollection = collection(db, "menu");
 
         const unsubscribe = onSnapshot(menuCollection,
-          (snapshot) => {
+          (snapshot: any) => {
             try {
-              const items = snapshot.docs.map(doc => ({
+              const items = snapshot.docs.map((doc: any) => ({
                 id: doc.id,
                 ...doc.data()
               })) as MenuItem[];
@@ -65,7 +65,7 @@ export default function FirebaseMenu() {
               setLoading(false);
             }
           },
-          (err) => {
+          (err: any) => {
             console.error('Error fetching menu:', err);
             setError('Failed to connect to menu database');
             setLoading(false);
