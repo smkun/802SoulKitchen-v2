@@ -25,7 +25,14 @@
       "mcp__playwright__browser_navigate",
       "mcp__playwright__browser_install",
       "SlashCommand(/sc:implement:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "SlashCommand(/sc:design \"Read PLANNING.md and TASKS.md. Propose a short plan for the top item in 'Next 5 tasks to run'.\")",
+      "Bash(find:*)",
+      "Bash(npx astro:*)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(firebase --version)",
+      "Bash(firebase init:*)",
+      "Bash(firebase login:*)"
     ],
     "deny": [],
     "ask": []
